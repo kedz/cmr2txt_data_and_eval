@@ -3,6 +3,8 @@
 This repository contains model outputs for the E2E Challenge and Viggo NLG datasets created for the paper 
 [Controllable Meaning Representation to Text Generation: Linearization and Data Augmentation Strategies](https://aclanthology.org/2020.emnlp-main.419/).
 
+# Obtaining validation and test set data.
+
 To access the data unzip the following files:
 - e2e_test_model_outputs.zip
 - e2e_valid_model_outputs.zip
@@ -40,6 +42,9 @@ where:
     - `b` indicates only the original training data is used. 
     - `bp` indicates the phrase based  dataugmentation is used to add aditional training examples.
 - `randomseed` - each model was trained and evaluated 5 different times using distinct random seeds.
+
+
+# Data Schema
 
 Each model output example (line in a jsonl file) has the following schema:
 - `"mr"` - a dictionary containing the input meaning representation, i.e. dialog act (da) and slot values from which to generate an utterance
