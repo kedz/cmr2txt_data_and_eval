@@ -16,7 +16,7 @@ unizp e2e_valid_model_outputs.zip
 unzip e2e_test_model_outputs.zip
 ```
 
-This should create director structure:
+this should create the following directory structure:
 
 ```shell
 model_outputs/{E2E,Viggo}/{BART,bi-gru,transformer}/{valid,test}
