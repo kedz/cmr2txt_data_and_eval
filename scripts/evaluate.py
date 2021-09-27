@@ -140,7 +140,7 @@ def main():
 
     cols = [
         "path", 'BLEU', 'NIST', 'METEOR', 'ROUGE_L', 'CIDEr',
-        'missing', 'incorrect', 'added', 'all', "Perf (%)", "Order (Acc. %)", 
+        'missing', 'incorrect', 'added', 'all', "SER (%)", "Order (Acc. %)", "Perf (%)", 
     ]
     df = pd.DataFrame(results, columns=cols)
     mean_df = df[cols[1:]].mean().to_frame().T
